@@ -1,0 +1,109 @@
+[{
+  "event_id": 1,
+  "event_name": "Let's Roam Scavenger Hunt",
+  "event_time": "10 AM",
+  "event_date": "April 18, 2020",
+  "event_location": "Napa",
+},
+{
+  "event_id": 2,
+  "event_name": "Napa Valley Book Fest",
+  "event_time": "11 AM",
+  "event_date": "April 18, 2020",
+  "event_location": "Napa"
+},
+{
+  "event_id": 3,
+  "event_name": "Meliza's Birthday Concert",
+  "event_time": "6 PM",
+  "event_date": "April 18, 2020",
+  "event_location": "Napa"
+},
+{
+  "event_id": 4,
+  "event_name": "Bright Eyes",
+  "event_time": "3 PM",
+  "event_date": "May 18, 2020",
+  "event_location": "Napa"
+},
+{
+  "event_id": 5,
+  "event_name": "2020 Trailblazers Summit Deposit",
+  "event_time": "3 PM",
+  "event_date": "June 17, 2020",
+  "event_location": "Napa"
+},
+{
+  "event_id": 6,
+  "event_name": "Tiesto",
+  "event_time": "10 PM",
+  "event_date": "June 19, 2020",
+  "event_location": "San Franscisco"
+},
+{
+  "event_id": 7,
+  "event_name": "Pop Punk's Not Dead",
+  "event_time": "7:30 PM",
+  "event_date": "June 21, 2020",
+  "event_location": "Berkeley"
+},
+{
+  "event_id": 8,
+  "event_name": "Bottlerock Bus Program",
+  "event_time": "10 AM",
+  "event_date": "October 2, 2020",
+  "event_location": "Napa"
+},
+{
+  "event_id": 9,
+  "event_name": "Friday Night Storytelling",
+  "event_time": "7 - 8 PM",
+  "event_date": "May 22, 2020",
+  "event_location": "Zoom - Napa"
+},
+{
+  "event_id": 10,
+  "event_name": "SIP Tiara Party 2020",
+  "event_time": "May 24 10 AM",
+  "event_date": "May 30 9 PM",
+  "event_location": "Napa"
+},{
+  "event_id": 11,
+  "event_name": "May Poetry Book Club",
+  "event_time": "6:30 - 8 PM",
+  "event_date": "May 5, 2020",
+  "event_location": "Napa"
+},{
+  "event_id": 12,
+  "event_name": "NB + Napa Library // Lowell Cohn",
+  "event_time": "7 - 8 PM",
+  "event_date": "May 28, 2020",
+  "event_location": "Napa"
+},{
+  "event_id": 13,
+  "event_name": "Kolohe Kai (NIGHT TWO)",
+  "event_time": "8 PM",
+  "event_date": "June 13, 2020",
+  "event_location": "Berkeley"
+},
+{
+  "event_id": 14,
+  "event_name": "SF St. Patrick's Day",
+  "event_time": "12 - 10 PM",
+  "event_date": "September 12, 2020",
+  "event_location": "San Francisco"
+},{
+  "event_id": 15,
+  "event_name": "Chocolate Salon",
+  "event_time": "10 AM - 5 PM",
+  "event_date": "November 22, 2020",
+  "event_location": "San Francisco"
+},{
+  "event_id": 16,
+  "event_name": "The Afro-Peruvian' Sextet",
+  "event_time": "6 PM",
+  "event_date": "June 11, 2020",
+  "event_location": "LiveStream"
+},
+
+]

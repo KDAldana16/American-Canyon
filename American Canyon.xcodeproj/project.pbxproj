@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		B0A733DA246487C0003DECBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A733D9246487C0003DECBC /* AppDelegate.swift */; };
 		B0A733DC246487C0003DECBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A733DB246487C0003DECBC /* SceneDelegate.swift */; };
-		B0A733DE246487C0003DECBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A733DD246487C0003DECBC /* ViewController.swift */; };
+		B0A733DE246487C0003DECBC /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A733DD246487C0003DECBC /* EventsViewController.swift */; };
 		B0A733E1246487C0003DECBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A733DF246487C0003DECBC /* Main.storyboard */; };
 		B0A733E3246487C2003DECBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0A733E2246487C2003DECBC /* Assets.xcassets */; };
 		B0A733E6246487C2003DECBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A733E4246487C2003DECBC /* LaunchScreen.storyboard */; };
+		B0A733EE246497E4003DECBC /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = B0A733ED246497E4003DECBC /* events.json */; };
+		B0A733F024649905003DECBC /* EventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A733EF24649905003DECBC /* EventData.swift */; };
+		B0A733F224649959003DECBC /* EventDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A733F124649959003DECBC /* EventDataLoader.swift */; };
+		B0A733F42464F06D003DECBC /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A733F32464F06D003DECBC /* EventsTableViewController.swift */; };
+		B0A733F62464F9D4003DECBC /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A733F52464F9D4003DECBC /* EventDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B0A733D6246487C0003DECBC /* American Canyon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "American Canyon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A733D9246487C0003DECBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0A733DB246487C0003DECBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B0A733DD246487C0003DECBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B0A733DD246487C0003DECBC /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		B0A733E0246487C0003DECBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0A733E2246487C2003DECBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0A733E5246487C2003DECBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0A733E7246487C2003DECBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0A733ED246497E4003DECBC /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
+		B0A733EF24649905003DECBC /* EventData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventData.swift; sourceTree = "<group>"; };
+		B0A733F124649959003DECBC /* EventDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDataLoader.swift; sourceTree = "<group>"; };
+		B0A733F32464F06D003DECBC /* EventsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
+		B0A733F52464F9D4003DECBC /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +68,13 @@
 			children = (
 				B0A733D9246487C0003DECBC /* AppDelegate.swift */,
 				B0A733DB246487C0003DECBC /* SceneDelegate.swift */,
-				B0A733DD246487C0003DECBC /* ViewController.swift */,
+				B0A733DD246487C0003DECBC /* EventsViewController.swift */,
+				B0A733ED246497E4003DECBC /* events.json */,
 				B0A733DF246487C0003DECBC /* Main.storyboard */,
+				B0A733F32464F06D003DECBC /* EventsTableViewController.swift */,
+				B0A733F52464F9D4003DECBC /* EventDetailViewController.swift */,
+				B0A733EF24649905003DECBC /* EventData.swift */,
+				B0A733F124649959003DECBC /* EventDataLoader.swift */,
 				B0A733E2246487C2003DECBC /* Assets.xcassets */,
 				B0A733E4246487C2003DECBC /* LaunchScreen.storyboard */,
 				B0A733E7246487C2003DECBC /* Info.plist */,
@@ -125,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0A733EE246497E4003DECBC /* events.json in Resources */,
 				B0A733E6246487C2003DECBC /* LaunchScreen.storyboard in Resources */,
 				B0A733E3246487C2003DECBC /* Assets.xcassets in Resources */,
 				B0A733E1246487C0003DECBC /* Main.storyboard in Resources */,
@@ -138,9 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0A733DE246487C0003DECBC /* ViewController.swift in Sources */,
+				B0A733DE246487C0003DECBC /* EventsViewController.swift in Sources */,
 				B0A733DA246487C0003DECBC /* AppDelegate.swift in Sources */,
+				B0A733F42464F06D003DECBC /* EventsTableViewController.swift in Sources */,
+				B0A733F024649905003DECBC /* EventData.swift in Sources */,
 				B0A733DC246487C0003DECBC /* SceneDelegate.swift in Sources */,
+				B0A733F62464F9D4003DECBC /* EventDetailViewController.swift in Sources */,
+				B0A733F224649959003DECBC /* EventDataLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
