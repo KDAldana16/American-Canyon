@@ -13,7 +13,6 @@ class EventsTableViewController: UITableViewController {
     var data = EventDataLoader().eventData
     
     let eventSegueIdentifier = "event"
-    let favoriteSegueIdentifier = "favorite"
 
     override func viewDidLoad() {
         super.viewDidLoad()
