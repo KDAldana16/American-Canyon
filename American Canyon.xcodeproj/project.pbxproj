@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B0A1C359246A04E7005942E6 /* AmCanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A1C358246A04E7005942E6 /* AmCanViewController.swift */; };
 		B0A1C35B246A07FC005942E6 /* citylogo.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A1C35A246A07FC005942E6 /* citylogo.png */; };
+		B0A1C35D246A3129005942E6 /* DataModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A1C35C246A3129005942E6 /* DataModal.swift */; };
+		B0A1C35F246A31EB005942E6 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A1C35E246A31EB005942E6 /* HeaderView.swift */; };
 		B0A733DA246487C0003DECBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A733D9246487C0003DECBC /* AppDelegate.swift */; };
 		B0A733DC246487C0003DECBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A733DB246487C0003DECBC /* SceneDelegate.swift */; };
 		B0A733DE246487C0003DECBC /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A733DD246487C0003DECBC /* EventsViewController.swift */; };
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		B0A1C358246A04E7005942E6 /* AmCanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmCanViewController.swift; sourceTree = "<group>"; };
 		B0A1C35A246A07FC005942E6 /* citylogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = citylogo.png; sourceTree = "<group>"; };
+		B0A1C35C246A3129005942E6 /* DataModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModal.swift; sourceTree = "<group>"; };
+		B0A1C35E246A31EB005942E6 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		B0A733D6246487C0003DECBC /* American Canyon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "American Canyon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A733D9246487C0003DECBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0A733DB246487C0003DECBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,13 +89,15 @@
 			children = (
 				B0A733D9246487C0003DECBC /* AppDelegate.swift */,
 				B0A733DB246487C0003DECBC /* SceneDelegate.swift */,
+				B0A1C35A246A07FC005942E6 /* citylogo.png */,
 				B0A1C358246A04E7005942E6 /* AmCanViewController.swift */,
 				B0A733DF246487C0003DECBC /* Main.storyboard */,
+				B0A1C35C246A3129005942E6 /* DataModal.swift */,
+				B0A1C35E246A31EB005942E6 /* HeaderView.swift */,
 				B0A1C357246A04AF005942E6 /* Events */,
 				B0A733E2246487C2003DECBC /* Assets.xcassets */,
 				B0A733E4246487C2003DECBC /* LaunchScreen.storyboard */,
 				B0A733E7246487C2003DECBC /* Info.plist */,
-				B0A1C35A246A07FC005942E6 /* citylogo.png */,
 			);
 			path = "American Canyon";
 			sourceTree = "<group>";
@@ -170,9 +176,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0A733DE246487C0003DECBC /* EventsViewController.swift in Sources */,
+				B0A1C35D246A3129005942E6 /* DataModal.swift in Sources */,
 				B0A733DA246487C0003DECBC /* AppDelegate.swift in Sources */,
 				B0A733F42464F06D003DECBC /* EventsTableViewController.swift in Sources */,
 				B0A1C359246A04E7005942E6 /* AmCanViewController.swift in Sources */,
+				B0A1C35F246A31EB005942E6 /* HeaderView.swift in Sources */,
 				B0A733F024649905003DECBC /* EventData.swift in Sources */,
 				B0A733DC246487C0003DECBC /* SceneDelegate.swift in Sources */,
 				B0A733F62464F9D4003DECBC /* EventDetailViewController.swift in Sources */,
