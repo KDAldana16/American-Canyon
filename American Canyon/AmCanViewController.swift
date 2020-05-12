@@ -14,10 +14,13 @@ class AmCanViewController: UIViewController {
     @IBOutlet weak var cityLogoImage: UIImageView!
     @IBOutlet weak var contactUsButton: UIButton!
     @IBOutlet weak var parksRecButton: UIButton!
+    @IBOutlet weak var welcomeLabel: UILabel!
+    
+    var welcomeLabelText = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        welcomeLabel.text = "Welcome \(welcomeLabelText) to"
     }
     
     @IBAction func cityWebButtonTapped(_ sender: UIButton) {
