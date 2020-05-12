@@ -28,8 +28,10 @@ class HeaderView: UIView {
     
     lazy var btn: UIButton = {
         let btn = UIButton(frame: CGRect(x: self.frame.origin.x, y: self.frame.origin.y, width: self.frame.width, height: self.frame.height))
-        btn.backgroundColor = UIColor.systemTeal
+        btn.backgroundColor = UIColor.systemRed
         btn.titleLabel?.textColor = UIColor.white
+        btn.layer.cornerRadius = 10
+        btn.clipsToBounds = true
         btn.addTarget(self, action: #selector(onClickHeaderView), for: .touchUpInside)
         
         return btn

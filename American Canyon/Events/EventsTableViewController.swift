@@ -31,7 +31,7 @@ class EventsTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = HeaderView(frame: CGRect(x: 0, y: 0, width: 425, height: 40))
+        let headerView = HeaderView(frame: CGRect(x: 10, y: 10, width: 400, height: 40))
         headerView.delegate = self
         headerView.secIndex = section
         headerView.btn.setTitle(headerData[section].headerName, for: .normal)
@@ -44,7 +44,7 @@ class EventsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 40
+        return 50
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -72,6 +72,9 @@ class EventsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        if indexPath.section != 0 { return nil }
+        
         let favorite = UIContextualAction(style: .normal, title: "Favorite") { (favorite, view, nil) in
             print("Favorite")
         }
