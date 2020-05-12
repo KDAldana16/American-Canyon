@@ -54,12 +54,12 @@
 		B0A1C357246A04AF005942E6 /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				B0A733ED246497E4003DECBC /* events.json */,
 				B0A733F32464F06D003DECBC /* EventsTableViewController.swift */,
+				B0A733F52464F9D4003DECBC /* EventDetailViewController.swift */,
 				B0A733DD246487C0003DECBC /* EventsViewController.swift */,
 				B0A733F124649959003DECBC /* EventDataLoader.swift */,
 				B0A733EF24649905003DECBC /* EventData.swift */,
-				B0A733F52464F9D4003DECBC /* EventDetailViewController.swift */,
-				B0A733ED246497E4003DECBC /* events.json */,
 			);
 			path = Events;
 			sourceTree = "<group>";

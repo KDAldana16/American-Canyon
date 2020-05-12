@@ -11,14 +11,11 @@ import UIKit
 class EventsTableViewController: UITableViewController {
     
     var data = EventDataLoader().eventData
-    
-    let eventSegueIdentifier = "event"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
          self.clearsSelectionOnViewWillAppear = false
-//         self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
     func setup() {
@@ -28,11 +25,6 @@ class EventsTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//
-//        return 0
-//    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -47,11 +39,19 @@ class EventsTableViewController: UITableViewController {
         return cell!
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let eventDetailVC = EventDetailViewController()
-//        navigationController?.pushViewController(eventDetailVC, animated: false)
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let favorite = UIContextualAction(style: .normal, title: "Favorite") { (favorite, view, nil) in
+            print("Favorite")
+        }
+        favorite.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+        favorite.image = .checkmark
+        
+        let config = UISwipeActionsConfiguration(actions: [favorite])
+        config.performsFirstActionWithFullSwipe = false
+        return config
     }
-
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

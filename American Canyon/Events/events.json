@@ -67,19 +67,22 @@
   "event_time": "May 24 10 AM",
   "event_date": "May 30 9 PM",
   "event_location": "Napa"
-},{
+},
+{
   "event_id": 11,
   "event_name": "May Poetry Book Club",
   "event_time": "6:30 - 8 PM",
   "event_date": "May 5, 2020",
   "event_location": "Napa"
-},{
+},
+{
   "event_id": 12,
   "event_name": "NB + Napa Library // Lowell Cohn",
   "event_time": "7 - 8 PM",
   "event_date": "May 28, 2020",
   "event_location": "Napa"
-},{
+},
+{
   "event_id": 13,
   "event_name": "Kolohe Kai (NIGHT TWO)",
   "event_time": "8 PM",
@@ -92,13 +95,15 @@
   "event_time": "12 - 10 PM",
   "event_date": "September 12, 2020",
   "event_location": "San Francisco"
-},{
+},
+{
   "event_id": 15,
   "event_name": "Chocolate Salon",
   "event_time": "10 AM - 5 PM",
   "event_date": "November 22, 2020",
   "event_location": "San Francisco"
-},{
+},
+{
   "event_id": 16,
   "event_name": "The Afro-Peruvian' Sextet",
   "event_time": "6 PM",

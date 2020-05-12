@@ -10,30 +10,28 @@ import UIKit
 
 class EventDetailViewController: UIViewController {
     
-    var data = EventDataLoader().eventData
+    var data: EventData!
+    
     
     @IBOutlet weak var labelDetailName: UILabel!
     @IBOutlet weak var labelDetailDate: UILabel!
     @IBOutlet weak var labelDetailTime: UILabel!
     @IBOutlet weak var labelDetailLocation: UILabel!
-    @IBOutlet weak var favoriteButton: UIButton!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
-        
     }
     
     private func updateUI() {
-//        labelDetailName.text = data.event_name
-//        labelDetailDate.text = data.event_date
-//        labelDetailTime.text = data.event_time
-//        labelDetailLocation.text = data.event_location
+        labelDetailName.text = data?.event_name
+//        labelDetailDate.text = data?.event_date
+//        labelDetailTime.text = data?.event_time
+//        labelDetailLocation.text = data?.event_location
     }
-    
-    @IBAction func favoriteButtonTapped(_ sender: Any) {
-    }
-    
+
     /*
     // MARK: - Navigation
 

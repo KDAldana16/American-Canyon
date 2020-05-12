@@ -29,7 +29,7 @@
         <scene sceneID="lLy-lX-MgH">
             <objects>
                 <navigationController title="Events " id="Eff-1r-gqf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Events" image="calendar.circle" catalog="system" id="N7T-ED-aJp"/>
+                    <tabBarItem key="tabBarItem" title="Events" image="calendar" catalog="system" id="N7T-ED-aJp"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="stK-6u-EUh">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -68,14 +68,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="aeg-cy-2ML">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="event" id="0KH-Qv-rj0">
-                                <rect key="frame" x="0.0" y="72" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0KH-Qv-rj0" id="ZZB-F7-3oD">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -201,16 +196,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihc-Pc-B0o">
-                                <rect key="frame" x="117" y="656" width="193" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Add to Favorites"/>
-                                <connections>
-                                    <action selector="favoriteButtonTapped:" destination="mnQ-vh-xps" eventType="touchUpInside" id="bxZ-1B-017"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -235,11 +220,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="yoC-Vp-B6w"/>
                     <connections>
-                        <outlet property="favoriteButton" destination="ihc-Pc-B0o" id="Gcy-Zl-u8f"/>
                         <outlet property="labelDetailDate" destination="DmS-ex-mF6" id="kPW-oT-Ztr"/>
                         <outlet property="labelDetailLocation" destination="hYB-CQ-LOB" id="sYe-B2-aIy"/>
                         <outlet property="labelDetailName" destination="gpP-5L-djK" id="T11-rs-fjG"/>
                         <outlet property="labelDetailTime" destination="ynn-M8-1OD" id="J0N-wc-ecm"/>
+                        <outlet property="view" destination="x9C-pd-HaA" id="M28-Zf-xLg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IgV-vO-KXq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -248,7 +233,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calendar.circle" catalog="system" width="128" height="121"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="citylogo.png" width="410" height="192"/>
         <image name="waveform.circle" catalog="system" width="128" height="121"/>
     </resources>
