@@ -21,7 +21,6 @@ class EventsTableViewController: UITableViewController {
         super.viewDidLoad()
         setup()
         tableView.tableFooterView = UIView()
-//         self.clearsSelectionOnViewWillAppear = false
     }
     
     func setup() {
@@ -50,11 +49,16 @@ class EventsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if headerData[section].isExpandable {
-            return data.count
-        } else {
-            return 0
+        var rowCount = 0
+        if section == 0 {
+            rowCount = data.count
         }
+        
+        if section == 1 {
+            rowCount = 0
+        }
+        
+        return rowCount
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -85,19 +89,27 @@ class EventsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        
+
         if indexPath.section != 0 { return nil }
-        
-        let favorite = UIContextualAction(style: .normal, title: "Favorite") { (favorite, view, nil) in
-            
+
+        let favorite = UIContextualAction(style: .normal, title: "Favorite") { (favorite, view, completionHandler) in
+            print("favorite \(indexPath.row)")
+            completionHandler(true)
+            func swiped(_ sender: UISwipeActionsConfiguration) {
+                let fromIndexPath = IndexPath(row: 0, section: 0)
+                let toIndexPath = IndexPath(row: 0, section: 1)
+                (moveRowAt: fromIndexPath, to: toIndexPath)
+            }
         }
+            
         favorite.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
-        favorite.image = .checkmark
-        
+        favorite.image = UIImage.checkmark
+
         let config = UISwipeActionsConfiguration(actions: [favorite])
         config.performsFirstActionWithFullSwipe = false
         return config
     }
+    
 
 }
 
