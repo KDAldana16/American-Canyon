@@ -86,6 +86,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Nearby Events" id="mB5-mh-o1X"/>
                     <connections>
+                        <outlet property="eventTable" destination="J3x-HY-HRD" id="Ynj-I2-wP1"/>
                         <outlet property="tableView" destination="J3x-HY-HRD" id="zbw-A5-yVX"/>
                         <segue destination="mnQ-vh-xps" kind="show" identifier="eventdetail" id="AWb-xD-y0d"/>
                     </connections>

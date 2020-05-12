@@ -10,6 +10,8 @@ import UIKit
 
 class EventsTableViewController: UITableViewController {
     
+    @IBOutlet var eventTable: UITableView!
+    
     var data = EventDataLoader().eventData
     var headerData = [DataModal(headerName: "Events", isExpandable: false),
                       DataModal(headerName: "Favorites", isExpandable: false)]
@@ -72,16 +74,16 @@ class EventsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
+//        tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "eventdetail", sender: self)
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let destination = segue.destination as? EventDetailViewController {
-//            destination.data = eventData[(labelDetailName]
-//        }
-//    }
-//    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? EventDetailViewController {
+            destination.data = data[(eventTable.indexPathForSelectedRow?.row)!]
+        }
+    }
+
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         if indexPath.section != 0 { return nil }
