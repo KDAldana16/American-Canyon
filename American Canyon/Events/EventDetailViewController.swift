@@ -10,8 +10,7 @@ import UIKit
 
 class EventDetailViewController: UIViewController {
     
-    var data: EventData!
-    
+    var data: EventData?
     
     @IBOutlet weak var labelDetailName: UILabel!
     @IBOutlet weak var labelDetailDate: UILabel!
@@ -27,9 +26,9 @@ class EventDetailViewController: UIViewController {
     
     private func updateUI() {
         labelDetailName.text = data?.event_name
-//        labelDetailDate.text = data?.event_date
-//        labelDetailTime.text = data?.event_time
-//        labelDetailLocation.text = data?.event_location
+        labelDetailDate.text = data?.event_date
+        labelDetailTime.text = data?.event_time
+        labelDetailLocation.text = data?.event_location
     }
 
     /*

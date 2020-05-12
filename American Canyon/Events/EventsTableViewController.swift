@@ -71,12 +71,23 @@ class EventsTableViewController: UITableViewController {
         return cell!
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "eventdetail", sender: self)
+    }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let destination = segue.destination as? EventDetailViewController {
+//            destination.data = eventData[(labelDetailName]
+//        }
+//    }
+//    
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         if indexPath.section != 0 { return nil }
         
         let favorite = UIContextualAction(style: .normal, title: "Favorite") { (favorite, view, nil) in
-            print("Favorite")
+            
         }
         favorite.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
         favorite.image = .checkmark
@@ -85,7 +96,6 @@ class EventsTableViewController: UITableViewController {
         config.performsFirstActionWithFullSwipe = false
         return config
     }
-    
 
 }
 
